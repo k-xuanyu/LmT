@@ -1,1 +1,1 @@
-python3 -m venv ../LmT
+python3 -m venv ../LmT/venv

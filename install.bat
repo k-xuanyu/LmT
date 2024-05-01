@@ -1,1 +1,1 @@
-python -m venv /path/to/new/virtual/environment
+python3 -m venv ../LmT/venv
