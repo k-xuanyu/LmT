@@ -1,6 +1,6 @@
 import uvicorn
 
-from LmT.app import app
+from API.main import app
 
 # 运行项目：开发模式
 
