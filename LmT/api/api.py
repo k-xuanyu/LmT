@@ -1,7 +1,6 @@
 from pydantic import BaseModel  
 from fastapi import FastAPI
 
-
 app = FastAPI()
 class Item(BaseModel):
     name: str
@@ -11,6 +10,4 @@ class Item(BaseModel):
 
 @app.post("/")
 def create_item(item: Item):
-    return item
-
-print("1")
+    
