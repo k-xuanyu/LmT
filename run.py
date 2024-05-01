@@ -1,7 +1,8 @@
 import uvicorn
 
-import LmT.app
-# 运行项目
+from LmT.app import app
+
+# 运行项目：开发模式
 
 if __name__ == "__main__":
-    uvicorn.run(app="run:app", port=8000)
+    uvicorn.run(app, host="0.0.0.0", port=8000)
