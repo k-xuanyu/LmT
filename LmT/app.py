@@ -1,4 +1,4 @@
-def main(model, info ):
+def main(model, info, llm_api, tokens, DB_api):
     if model == "thing":
         r = print(info)
 
