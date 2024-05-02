@@ -1,8 +1,9 @@
+import sys
+sys.path.append(r".")
 from configparser import ConfigParser
-from .post import *
+from ..llm.post import *
 
 config = ConfigParser()
-
 
 class LLM:
 
@@ -26,3 +27,4 @@ class LLM:
 
 
 
+        
