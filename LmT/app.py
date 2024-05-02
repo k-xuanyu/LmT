@@ -1,6 +1,12 @@
-def main(model, info, llm_api, tokens, DB_api):
+from llm.llm import LLM
+
+
+def main(model, info):
+
+    llm = LLM()
+
     if model == "thing":
-        r = print(info)
+        llm.post(info)
 
     elif model == "learning":
         r = print(info)

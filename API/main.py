@@ -9,14 +9,11 @@ from LmT.config.config import Config
 app = FastAPI()
 
 
-class use(BaseModel):     #
-    model: str
+class use(BaseModel):     #定义ues类用于存储 使用主程序的相关信息
     info: str
-    llm_api: str
-    tokens: str = None
-    DB_api: str
 
-class config(BaseModel):
+
+class config(BaseModel):   #定义config类型 储存 config api 的信息
     model: str
     info: str
     llm_api: str
@@ -32,8 +29,8 @@ def create_item(item: use):
 
    return r 
 
-
-@app.put("/")
+# 创建文件配置路由
+@app.put("/put/")
 def config_item(item: config):
 
      return "此功能暂不开放"
