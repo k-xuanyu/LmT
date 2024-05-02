@@ -8,7 +8,7 @@ def main(model, info):
 
     llm = LLM()
 
-    if model == "thing":
+    if model == "think":
         r = llm.post(info)
 
     elif model == "learning":
