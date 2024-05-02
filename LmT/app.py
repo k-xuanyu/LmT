@@ -1,4 +1,6 @@
-from llm.llm import LLM
+import sys
+sys.path.append(r"../")
+from LmT.llm.llm import LLM
 
 
 def main(model, info):
@@ -6,7 +8,7 @@ def main(model, info):
     llm = LLM()
 
     if model == "thing":
-        llm.post(info)
+        r = llm.post(info)
 
     elif model == "learning":
         r = print(info)

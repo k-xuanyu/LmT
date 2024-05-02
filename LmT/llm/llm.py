@@ -1,5 +1,7 @@
+import sys
+sys.path.append(r".")
 from configparser import ConfigParser
-from post import *
+from ..llm.post import *
 
 config = ConfigParser()
 
@@ -17,7 +19,7 @@ class LLM:
 
     def post(self, prompt) :  # 发送 post 请求
         if self.kind == "llama":
-            print(Ollama(self.url, self.name, prompt))
+            return Ollama(self.url, self.name, prompt)
         
         elif self.kind == "gpt":
             pass

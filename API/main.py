@@ -10,6 +10,7 @@ app = FastAPI()
 
 
 class use(BaseModel):     #定义ues类用于存储 使用主程序的相关信息
+    model: str
     info: str
 
 
@@ -25,7 +26,7 @@ class config(BaseModel):   #定义config类型 储存 config api 的信息
 # 创建主路由
 @app.post("/")
 def create_item(item: use):
-   r =  main(item.model, item.info, item.llm_api, item.tokens, item.DB_api)
+   r =  main(item.model, item.info)
 
    return r 
 
