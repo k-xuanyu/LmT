@@ -1,5 +1,3 @@
-import sys
-sys.path.append(r"../")
 from LmT.llm.llm import LLM
 
 # 入口函数

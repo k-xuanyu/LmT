@@ -1,9 +1,6 @@
-import sys
-sys.path.append(r"../")
 from LmT.app import main
 from pydantic import BaseModel  
 from fastapi import FastAPI
-from LmT.config.config import Config
 
 
 app = FastAPI()
@@ -26,7 +23,8 @@ class config(BaseModel):   #定义config类型 储存 config api 的信息
 # 创建主路由
 @app.post("/")
 def create_item(item: use):
-   r =  main(item.model, item.info)
+   
+   r = main(item.model, item.info)
 
    return r 
 
@@ -35,3 +33,6 @@ def create_item(item: use):
 def config_item(item: config):
 
      return "此功能暂不开放"
+
+
+print(r = main('think', '你好'))
