@@ -17,7 +17,7 @@ class LLM:
 
     def post(self, prompt) :  # 发送 post 请求
         if self.kind == "llama":
-            return Ollama(self.url, self.name, prompt)
+            return "secceess"
         
         elif self.kind == "gpt":
             pass
