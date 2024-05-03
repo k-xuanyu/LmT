@@ -35,4 +35,3 @@ def config_item(item: config):
      return "此功能暂不开放"
 
 
-print(r = main('think', '你好'))
