@@ -31,7 +31,7 @@ def Ollama(url, name, prompt):
     "stream": False # type: ignore
     }
 
-    x = requests.post(url, json=post_json)
-    r =  print(x.json()['response'])
+    x = requests.post(url, json=post_json)      #发起 post 请求
+    r =  print(x.json()['response'])        #整理数据
 
     return r

@@ -16,13 +16,16 @@ class LLM:
 
 
     def post(self, prompt) :  # 发送 post 请求
+        
         if self.kind == "llama":
-            return "secceess"
+            r = Ollama(self.url, self.name, prompt)
+            return r
         
         elif self.kind == "gpt":
-            pass
+            return "此功能暂未开放请使用 Ollama"
+        
         else:
-            pass
+            return "你未进行该框架的 post 初始化"
 
 
 
